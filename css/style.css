@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+}
+/* 
+#c8e8e7 - body
+#341c7a - purple
+*/
+body{
+    background-color: #c8e8e7;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #fff;
+    width: 75rem;
+    height: 30rem;
+    padding: 3rem;
+    display: flex;
+    gap: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    margin: 1rem;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.left-items > i{
+    font-size: 2rem;
+    color: #341c7a;
+}
+
+.left-items > h4{
+    margin-top: 0.25rem;
+}
+
+.left-items > p{
+    color: gray;
+    font-size: small;
+}
+
+hr{
+    height: 18rem;
+    align-self: center;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+}
+
+.right > h2{
+    color: #341c7a;
+    margin-bottom: 0.25rem;
+}
+
+.for-input{
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex-grow: 1;
+}
+
+.for-input > *{
+    border-radius: 5px;
+}
+
+.for-input > input{
+    border: none;
+    background-color: lightgray;
+    padding: 1rem;
+}
+
+.for-input > input:focus{
+    outline: 2px solid #341c7a;
+}
+
+.for-input > input::placeholder{
+    font-size: 1rem;
+}
+
+.for-input > textarea{
+    resize: none;
+    background-color: lightgray;
+    padding: 1rem;
+    border: none;
+}
+
+.for-input > textarea:focus{
+    outline: 2px solid #341c7a;
+}
+
+.for-input > textarea::placeholder{
+    font-size: 1rem;
+}
+
+.submit-btn{
+    border: none;
+    background-color: #341c7a;
+    color: #fff;
+    padding: 0.75rem;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+@media screen and (max-width: 768px){
+
+    body{
+        height: auto;
+    }
+    .container{
+        flex-direction: column-reverse;
+        height: auto;
+        margin: 3rem;
+        padding: 2rem;
+    }
+    hr{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .container{
+        margin: 1rem;
+        padding: 2rem;
+    }
+}

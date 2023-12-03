@@ -127,6 +127,9 @@ hr{
         margin: 3rem;
         padding: 2rem;
     }
+    .for-input > textarea{
+        margin-bottom: 0.75rem;
+    }
     hr{
         display: none;
     }
